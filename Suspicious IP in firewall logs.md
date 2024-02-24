@@ -2,4 +2,4 @@ This is used to search list of suspicious IP's in the firewall logs. his command
 ```spl
 index=ciso-fw_raw sourcetype="asa:traffic" dest IN ("154.221.31.191","45.12.253.56","45.12.253.72","45.12.253.98","45.130.151.133","47.90.167.104") 
 | stats count by dest
-```spl
+```
